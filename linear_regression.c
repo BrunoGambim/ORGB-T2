@@ -2,7 +2,7 @@
 #include <time.h> 
 
 #define VARS 10
-#define ITER 240000
+#define ITER 1000
 #define POINTS 100
 #define ALPHA 0.00000005
 
