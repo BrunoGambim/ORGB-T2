@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <time.h> 
 
 #define NODOS 20000
 #define QUERIES 9000
@@ -72,10 +71,6 @@ BT_NODE* find(int key){
 
 int main(){
     int i;
-    double time_spent = 0.0;
- 
-    clock_t begin = clock();
- 
     for(i = 0; i < NODOS; i++){
         insert(nodos[i]);
     }
@@ -83,15 +78,6 @@ int main(){
     for(i = 0; i < QUERIES; i++){
         find(queries[i]);
     }
-
-    clock_t end = clock();
- 
-    // calcula o tempo decorrido encontrando a diferença (end - begin) e
-    // dividindo a diferença por CLOCKS_PER_SEC para converter em segundos
-    time_spent += (double)(end - begin) / CLOCKS_PER_SEC;
- 
-    printf("The elapsed time is %f seconds", time_spent);
-
     return 0;
 }
 
