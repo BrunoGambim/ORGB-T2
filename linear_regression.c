@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 #define VARS 10
-#define ITER 500
+#define ITER 250
 #define POINTS 200
 #define ALPHA 0.00000005
 
